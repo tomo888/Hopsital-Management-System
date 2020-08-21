@@ -4,15 +4,11 @@
  * and open the template in the editor.
  */
 package userTypes;
-
-import java.io.Serializable;
-
 /**
  *
  * @author User
  */
 public abstract class GenericUser {
-    public abstract class User implements Serializable  {
     private String firstName;
     private String surname;
     private String sex;
@@ -20,7 +16,7 @@ public abstract class GenericUser {
     private String userID;
     private String password;
 
-    public User(String firstName, String surname, String sex, String address, String userID, String password) {
+    public GenericUser(String firstName, String surname, String sex, String address, String userID, String password) {
         this.firstName = firstName;
         this.surname = surname;
         this.sex = sex;
@@ -77,5 +73,4 @@ public abstract class GenericUser {
         this.password = password;
     }
     
-    }
 }
